@@ -5,9 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+    public static SceneTransition instance;
+
     public Animator animator;
 
     private int levelToLoad;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject); 
+    }
 
     // Update is called once per frame
     void Update()
