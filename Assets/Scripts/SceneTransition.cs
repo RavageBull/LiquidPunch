@@ -42,11 +42,12 @@ public class SceneTransition : MonoBehaviour
     public void FadeToLevel (int levelIndex)
     {
         levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
+        animator.SetBool("FadeOut", true);
     }
 
     public void OnFadeComplete()
     {
         SceneManager.LoadScene(levelToLoad);
+        animator.SetBool("FadeOut", false);
     }
 }
