@@ -5,9 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+    public static SceneTransition instance;
+
     public Animator animator;
 
     private int levelToLoad;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject); 
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,11 +42,12 @@ public class SceneTransition : MonoBehaviour
     public void FadeToLevel (int levelIndex)
     {
         levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
+        animator.SetBool("FadeOut", true);
     }
 
     public void OnFadeComplete()
     {
         SceneManager.LoadScene(levelToLoad);
+        animator.SetBool("FadeOut", false);
     }
 }
