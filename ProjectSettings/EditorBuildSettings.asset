@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StormScene.unity
+    path: Assets/Scenes/MainScenes/StormScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Testing.unity
+    path: Assets/Scenes/TestScenes/Testing.unity
     guid: f20fd0d0fead9b947abdc0f46ea2e96c
   - enabled: 1
-    path: Assets/Scenes/Testing2.unity
+    path: Assets/Scenes/TestScenes/Testing2.unity
     guid: 24fa1b483a66b32438408bfff4ec76d9
   m_configObjects: {}
