@@ -59,7 +59,8 @@ public class TornadoPhysicsSystem : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<TornadoEffected>() != null && tornadoEffecteds.Contains(other.GetComponent<TornadoEffected>()))
+        Debug.Log(" Object Left = " + other.gameObject.name );
+        if (other.GetComponent<TornadoEffected>() != null)
         {
             tornadoEffecteds.Remove(other.GetComponent<TornadoEffected>());
         }

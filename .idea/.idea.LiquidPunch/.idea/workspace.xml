@@ -13,12 +13,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoPhysicsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TestMoverScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoEffected.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/Hand.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoPhysicsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tornado/TestMoverScript.cs" />
       </list>
     </option>
   </component>
@@ -71,6 +74,7 @@
       <workItem from="1583912258369" duration="749000" />
       <workItem from="1584331127228" duration="598000" />
       <workItem from="1584357581312" duration="5504000" />
+      <workItem from="1584406771633" duration="2305000" />
     </task>
     <servers />
   </component>

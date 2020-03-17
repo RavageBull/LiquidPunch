@@ -754,6 +754,7 @@
         <e p="Scripts" t="Include">
           <e p="SceneTransition.cs" t="Include" />
           <e p="Tornado" t="Include">
+            <e p="TestMoverScript.cs" t="Include" />
             <e p="TornadoEffected.cs" t="Include" />
             <e p="TornadoPhysicsSystem.cs" t="Include" />
           </e>
