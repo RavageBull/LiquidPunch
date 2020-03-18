@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TestMoverScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoEffected.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JellYfish/MovementTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JellYfish/PulsingMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/Hand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JellYfish/JellyFishWandering.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -28,6 +29,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/avoidance,.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/MovementTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/JellyFishWandering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/PulsingMovement.cs" />
       </list>
     </option>
   </component>
@@ -80,7 +82,8 @@
       <workItem from="1583912258369" duration="749000" />
       <workItem from="1584331127228" duration="598000" />
       <workItem from="1584357581312" duration="5504000" />
-      <workItem from="1584406771633" duration="7096000" />
+      <workItem from="1584406771633" duration="7115000" />
+      <workItem from="1584500538652" duration="2274000" />
     </task>
     <servers />
   </component>

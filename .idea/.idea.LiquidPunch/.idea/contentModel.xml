@@ -755,6 +755,7 @@
           <e p="JellYfish" t="Include">
             <e p="JellyFishWandering.cs" t="Include" />
             <e p="MovementTest.cs" t="Include" />
+            <e p="PulsingMovement.cs" t="Include" />
           </e>
           <e p="SceneTransition.cs" t="Include" />
           <e p="Tornado" t="Include">
