@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitioner: {fileID: 1697019349}
+  musicTrack: {fileID: 1697019352}
 --- !u!1 &124986591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,7 +2843,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c77844bb6cf49d74794c38e3eec1ca79, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
