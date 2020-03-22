@@ -6,6 +6,13 @@ public class TriggerTransition : MonoBehaviour
 {
     public SceneTransition transitioner;
 
+    public AudioSource musicTrack;
+
+    public void TriggerMusicTrack()
+    {
+        musicTrack.Play();
+    }
+
     public void TransitionScenes()
     {
         transitioner.FadeToNextLevel();
