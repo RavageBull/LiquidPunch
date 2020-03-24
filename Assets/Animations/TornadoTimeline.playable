@@ -272,16 +272,16 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 73.95
+        time: 77.566666
         value: {x: 23.099993, y: 0, z: 90.40001}
-        inSlope: {x: 0, y: 0, z: 0.65325296}
-        outSlope: {x: 0, y: 0, z: 0.65325296}
+        inSlope: {x: 0, y: 0, z: 0.51977307}
+        outSlope: {x: 0, y: 0, z: 0.51977307}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 79.01667
+        time: 82.63333
         value: {x: 1.5999919, y: 0, z: 92.700005}
         inSlope: {x: -0, y: 0, z: 0.5348184}
         outSlope: {x: -0, y: 0, z: 0.5348184}
@@ -290,7 +290,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 85.916664
+        time: 89.53333
         value: {x: 1.5999916, y: 0, z: 96.8}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -325,7 +325,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 85.916664
+    m_StopTime: 89.53333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -417,7 +417,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 73.95
+        time: 77.566666
         value: 23.099993
         inSlope: 0
         outSlope: 0
@@ -426,7 +426,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 79.01667
+        time: 82.63333
         value: 1.5999919
         inSlope: -0
         outSlope: -0
@@ -435,7 +435,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 85.916664
+        time: 89.53333
         value: 1.5999916
         inSlope: 0
         outSlope: 0
@@ -526,7 +526,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 73.95
+        time: 77.566666
         value: 0
         inSlope: 0
         outSlope: 0
@@ -535,7 +535,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 79.01667
+        time: 82.63333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -544,7 +544,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 85.916664
+        time: 89.53333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -635,16 +635,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 73.95
+        time: 77.566666
         value: 90.40001
-        inSlope: 0.65325296
-        outSlope: 0.65325296
+        inSlope: 0.51977307
+        outSlope: 0.51977307
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 79.01667
+        time: 82.63333
         value: 92.700005
         inSlope: 0.5348184
         outSlope: 0.5348184
@@ -653,7 +653,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 85.916664
+        time: 89.53333
         value: 96.8
         inSlope: 0
         outSlope: 0
@@ -672,7 +672,7 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 85.85
+  - time: 89.46667
     functionName: TransitionScenes
     data: 
     objectReferenceParameter: {fileID: 0}
