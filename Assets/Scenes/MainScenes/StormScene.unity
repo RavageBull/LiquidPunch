@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -270,7 +270,7 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114975270}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
   m_InitialState: 1
@@ -2871,6 +2871,7 @@ GameObject:
   - component: {fileID: 1697019350}
   - component: {fileID: 1697019349}
   - component: {fileID: 1697019352}
+  - component: {fileID: 1697019353}
   m_Layer: 0
   m_Name: SceneTransitioner
   m_TagString: Untagged
@@ -3021,6 +3022,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!320 &1697019353
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697019348}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 661247983271922840, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
+    value: {fileID: 114975271}
+  - key: {fileID: -6313218209568323241, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
+    value: {fileID: 1697019352}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1707459624
 PrefabInstance:
   m_ObjectHideFlags: 0
