@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: b7636ca95d0e1eb408ee3f0dd89047fd, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6e5d6c8e5ce44444988a727ab2175296, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -236,6 +236,8 @@ GameObject:
   - component: {fileID: 114975273}
   - component: {fileID: 114975271}
   - component: {fileID: 114975274}
+  - component: {fileID: 114975272}
+  - component: {fileID: 114975275}
   m_Layer: 0
   m_Name: Tornado
   m_TagString: Untagged
@@ -262,6 +264,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &114975272
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114975270}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 661247983271922840, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
+    value: {fileID: 114975271}
+  - key: {fileID: -5944656114944758149, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
+    value: {fileID: 114975275}
+  m_ExposedReferences:
+    m_References: []
 --- !u!4 &114975273
 Transform:
   m_ObjectHideFlags: 0
@@ -294,7 +317,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitioner: {fileID: 1697019349}
-  musicTrack: {fileID: 1697019352}
+  musicTrack: {fileID: 0}
+--- !u!82 &114975275
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114975270}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &124986591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,7 +2968,6 @@ GameObject:
   - component: {fileID: 1697019350}
   - component: {fileID: 1697019349}
   - component: {fileID: 1697019352}
-  - component: {fileID: 1697019353}
   m_Layer: 0
   m_Name: SceneTransitioner
   m_TagString: Untagged
@@ -2870,6 +2988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1697019350}
+  notEntry: 0
+  AweTrack: {fileID: 1697019352}
 --- !u!95 &1697019350
 Animator:
   serializedVersion: 3
@@ -2914,7 +3034,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c77844bb6cf49d74794c38e3eec1ca79, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 947542b05af06f748a222048fc894742, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3000,27 +3120,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!320 &1697019353
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697019348}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 661247983271922840, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
-    value: {fileID: 114975271}
-  - key: {fileID: -6313218209568323241, guid: 59f2cfcf8f45b354ca43bbf6c6dc5195, type: 2}
-    value: {fileID: 1697019352}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1001 &1707459624
 PrefabInstance:
   m_ObjectHideFlags: 0

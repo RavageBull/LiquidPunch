@@ -11,6 +11,10 @@ public class SceneTransition : MonoBehaviour
 
     private int levelToLoad;
 
+    public bool notEntry = false;
+
+    public AudioSource AweTrack;
+
     private void Awake()
     {
         if (instance == null)
@@ -24,15 +28,7 @@ public class SceneTransition : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject); 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            FadeToNextLevel();
-        }
-    }
+    
     
     public void FadeToNextLevel()
     {
@@ -49,5 +45,15 @@ public class SceneTransition : MonoBehaviour
     {
         SceneManager.LoadScene(levelToLoad);
         animator.SetBool("FadeOut", false);
+
+        notEntry = true;
+    }
+
+    public void PlayAweTrack()
+    {
+        if(notEntry != false)
+        {
+            AweTrack.Play();
+        }
     }
 }
