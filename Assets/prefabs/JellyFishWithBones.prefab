@@ -203,8 +203,8 @@ SpringJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 0.8
+  m_MassScale: 0.43
+  m_ConnectedMassScale: 1.87
 --- !u!1 &2169838818638572983
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 8511463109967755975}
   - component: {fileID: 8511463109967755978}
   - component: {fileID: 8511463109967755980}
+  - component: {fileID: 1749856680}
   m_Layer: 0
   m_Name: JellyFishWithBones
   m_TagString: Untagged
@@ -325,8 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4f7f2741804e844b165c71f3cd6573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  square: 0
-  forceMultiplier: 10
+  forceMultiplier: 35
   mainBone: {fileID: 8511463109517188046}
   pulseSpeed: 0.7
 --- !u!114 &8511463109967755978
@@ -361,8 +361,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 0}
-  minDistance: 1
-  maxDistance: 60
+  minDistance: 3.67
+  maxDistance: 21.9
+  minHeight: 1.19
+  turnForce: 0.5
+  currentStates: 
+  MainBoneRigidbody: {fileID: 8511463109517188046}
+--- !u!114 &1749856680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2169838818638572983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b552f66bc904448b4dafb84ce401af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainBoneRigidBody: {fileID: 8511463109517188046}
+  directionChangeFrequency: 0.2
+  directionChangeMultiplier: 0.3
+  seedX: 0.1
+  seedY: 0.2
+  seedZ: 0.3
 --- !u!1 &5849782365068825533
 GameObject:
   m_ObjectHideFlags: 0
