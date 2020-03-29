@@ -22,10 +22,11 @@ namespace JellYfish
             seedZ += rand;
         }
 
-        void Update()
+        void FixedUpdate()
         {
 
             Wander();
+
         }
 
 
@@ -39,5 +40,9 @@ namespace JellYfish
             
             mainBoneRigidBody.AddTorque(transform.TransformDirection(new Vector3(x,y,z).normalized * directionChangeMultiplier));
         }
+        
+        
+        
+        
     }
 }

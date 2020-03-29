@@ -4,26 +4,21 @@ using UnityEngine;
 
 public class PulsingMovement : MonoBehaviour
 {
-    public bool square;
     public float forceMultiplier;
     public Rigidbody mainBone;
     public float pulseSpeed;
+
+    private float timingOffset;
     // Start is called before the first frame update
     void Start()
     {
+        timingOffset = Random.Range(-1f, 1f);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (square)
-        {
-            mainBone.AddForce(forceMultiplier * SquareWave(Time.time) * -mainBone.transform.up);
-        }
-        else
-        {
-            mainBone.AddForce(forceMultiplier * SineWave(Time.time) * -mainBone.transform.up);
-        }
+        mainBone.AddForce(forceMultiplier * SineWave(Time.time + timingOffset) * -mainBone.transform.up);
     }
 
     float SineWave( float x)
@@ -33,10 +28,5 @@ public class PulsingMovement : MonoBehaviour
         return y;
     }
 
-    int SquareWave(float x)
-    {
-        int y =
-        Mathf.RoundToInt((Mathf.Sign(Mathf.Sin(x *pulseSpeed * 2 * Mathf.PI))+1)/2);
-        return y;
-    }
+
 }
