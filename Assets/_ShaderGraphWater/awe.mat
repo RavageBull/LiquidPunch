@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShaderGraph_AnimatedWaterSurface
+  m_Name: awe
   m_Shader: {fileID: -6465566751694194690, guid: 029d401e3ffd63447b7845720ea8bb12,
     type: 3}
   m_ShaderKeywords: 
