@@ -87,7 +87,7 @@ Material:
     - _WaveHeight: 2
     - _ZWrite: 1
     m_Colors:
-    - Color_B55815D6: {r: 0.15, g: 0.21767679, b: 0.25, a: 0}
+    - Color_B55815D6: {r: 0.27100393, g: 0.53422034, b: 0.6603774, a: 0}
     - Vector2_943B9C2C: {r: 0.1, g: 0.5, b: 0, a: 0}
     - Vector2_968AF6EE: {r: 10, g: 4, b: 1, a: 0}
     - Vector2_B414796C: {r: 0.5, g: 0, b: 0, a: 0}
