@@ -11,8 +11,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< Updated upstream
     <setting file="file://$USER_HOME$/Desktop/New folder/PinballDepthTest/Pinball Depth Test/Assets/Materials/DepthMask.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneTransition.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoPhysicsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TestMoverScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoEffected.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JellYfish/MovementTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JellYfish/PulsingMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JellYfish/JellyFishBoundary.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/Hand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tornado/TornadoEffected.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ShaderGraphWater/steves/Materials/DepthMask.shader" root0="FORCE_HIGHLIGHTING" />
@@ -32,10 +41,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tornado/TestMoverScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/avoidance,.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/MovementTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/JellyFishWandering.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/PulsingMovement.cs" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Temp/GeneratedFromSurface-Custom-DepthMask.shader" />
         <option value="$PROJECT_DIR$/Assets/_ShaderGraphWater/steves/WaterLevel.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/JellyFishWandering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JellYfish/JellyFishBoundary.cs" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -94,10 +107,16 @@
       <workItem from="1584331127228" duration="598000" />
       <workItem from="1584357581312" duration="5504000" />
       <workItem from="1584406771633" duration="7115000" />
+<<<<<<< Updated upstream
       <workItem from="1584500538652" duration="2274000" />
       <workItem from="1585009222807" duration="2009000" />
       <workItem from="1585445487518" duration="1185000" />
       <workItem from="1585451044137" duration="686000" />
+=======
+      <workItem from="1584500538652" duration="5435000" />
+      <workItem from="1585012387465" duration="883000" />
+      <workItem from="1585457706730" duration="3196000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
