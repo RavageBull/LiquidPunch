@@ -4221,6 +4221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1697019350}
+  notEntry: 0
+  AweTrack: {fileID: 0}
 --- !u!95 &1697019350
 Animator:
   serializedVersion: 3
