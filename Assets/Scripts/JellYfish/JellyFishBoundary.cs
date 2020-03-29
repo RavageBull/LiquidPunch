@@ -8,6 +8,7 @@ public class JellyFishBoundary : MonoBehaviour
     public Transform PlayerTransform;
     public float minDistance;
     public float maxDistance;
+    public float minHeight;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,15 @@ public class JellyFishBoundary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Vector3.Distance(transform.position, PlayerTransform.position) > maxDistance)
+        {
+            transform.LookAt(PlayerTransform.position);
+        }
+        else if (Vector3.Distance(transform.position, PlayerTransform.position) < maxDistance)
+
+        {
+           
+        }
     }
 
     private void OnDrawGizmosSelected()
