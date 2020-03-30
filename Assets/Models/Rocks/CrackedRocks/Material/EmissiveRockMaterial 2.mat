@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EmissiveRockMaterial
+  m_Name: EmissiveRockMaterial 2
   m_Shader: {fileID: -6465566751694194690, guid: d8de9f7377a00a6439a6799a9c448faa,
     type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP
@@ -101,7 +101,7 @@ Material:
     - Vector1_3CC5D681: 1
     - Vector1_4849E038: 20
     - Vector1_72A7D764: 1
-    - Vector1_A202C76C: 1
+    - Vector1_A202C76C: 0.69
     - Vector1_A4C470E6: 0
     - _AlphaClip: 0
     - _Blend: 0
@@ -125,7 +125,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_6F9AC641: {r: 0.43302822, g: 0, b: 1, a: 0}
+    - Color_6F9AC641: {r: 1, g: 0.29251802, b: 0, a: 0}
     - Color_933107EA: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_58546B8: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
