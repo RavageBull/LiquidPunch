@@ -763,6 +763,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -837,7 +842,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -1522,6 +1527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1596,7 +1606,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -2651,6 +2661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2725,7 +2740,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -2859,6 +2874,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
     type: 3}
   m_PrefabInstance: {fileID: 1119163451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &538213753 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400012, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108583728}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &556028866
 PrefabInstance:
@@ -3219,6 +3240,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3293,7 +3319,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -3466,6 +3492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3540,7 +3571,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -3585,6 +3616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
@@ -3660,7 +3696,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -3785,6 +3821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3859,7 +3900,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -4106,6 +4147,117 @@ Transform:
   m_Father: {fileID: 7291851}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &778311821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778311822}
+  - component: {fileID: 778311826}
+  - component: {fileID: 778311825}
+  - component: {fileID: 778311824}
+  - component: {fileID: 778311823}
+  m_Layer: 0
+  m_Name: HandJellyFishInteractionObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &778311822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778311821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 1194877387}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &778311823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778311821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6640d9ccb8ea8e54abef10e06dbffdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1.32
+  distance: 5.16
+  interactables:
+    serializedVersion: 2
+    m_Bits: 256
+  target: {fileID: 0}
+--- !u!135 &778311824
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778311821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &778311825
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778311821}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &778311826
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778311821}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &806931808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4304,6 +4456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4378,7 +4535,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -4693,6 +4850,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4767,7 +4929,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -4806,6 +4968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
@@ -4881,7 +5048,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -5761,6 +5928,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5835,7 +6007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -5973,6 +6145,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
     type: 3}
   m_PrefabInstance: {fileID: 1549299555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1194877387 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108583728}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1211758774
 PrefabInstance:
@@ -6225,6 +6403,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6299,7 +6482,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -6818,6 +7001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6892,7 +7080,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -7479,6 +7667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7553,7 +7746,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -7688,6 +7881,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7762,7 +7960,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -8057,6 +8255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8131,7 +8334,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -8278,6 +8481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8352,7 +8560,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -8794,6 +9002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8868,7 +9081,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -9329,6 +9542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9403,7 +9621,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -9528,6 +9746,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9602,7 +9825,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -9647,6 +9870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
@@ -9722,7 +9950,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -10213,6 +10441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10287,7 +10520,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -10422,6 +10655,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10496,7 +10734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -13225,6 +13463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13299,7 +13542,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -13689,6 +13932,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13763,7 +14011,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -13904,6 +14152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13978,7 +14231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -14189,6 +14442,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14263,7 +14521,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -14489,6 +14747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14563,7 +14826,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -14725,12 +14988,6 @@ MonoBehaviour:
   FadeMinDistance: 0.25
   PreferredHeight: 1
   FadeMaxDistance: 0.35
---- !u!4 &2108583733 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 2108583728}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2114223486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14742,6 +14999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
@@ -14817,7 +15079,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance
@@ -14856,6 +15118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jellyFishVeryLP2WithBones (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632241779640981468, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8507966566861612495, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
@@ -14931,7 +15198,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerTransform
       value: 
-      objectReference: {fileID: 2108583733}
+      objectReference: {fileID: 538213753}
     - target: {fileID: 4632241779640981470, guid: fe8f4da01b8fc3a48915e9a39a96ec73,
         type: 3}
       propertyPath: maxDistance

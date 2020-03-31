@@ -763,10 +763,17 @@
           <e p="JellYfish" t="Include">
             <e p="JellyFishBoundary.cs" t="Include" />
             <e p="JellyFishWandering.cs" t="Include" />
+            <e p="jellyInteraction.cs" t="Include" />
             <e p="MovementTest.cs" t="Include" />
+            <e p="MoveTowardTarget.cs" t="Include" />
             <e p="PulsingMovement.cs" t="Include" />
           </e>
+          <e p="player interaction" t="Include">
+            <e p="HandInteractionScript.cs" t="Include" />
+            <e p="IHandInteractable.cs" t="Include" />
+          </e>
           <e p="SceneTransition.cs" t="Include" />
+          <e p="TerrainConfig.cs" t="Include" />
           <e p="Tornado" t="Include">
             <e p="TestMoverScript.cs" t="Include" />
             <e p="TornadoEffected.cs" t="Include" />
