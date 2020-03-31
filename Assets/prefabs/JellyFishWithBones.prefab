@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 5101886722808771294}
   - component: {fileID: 6039878502205801986}
   - component: {fileID: 8511463109967755975}
-  - component: {fileID: 8511463109967755978}
   - component: {fileID: 8511463109967755980}
   - component: {fileID: 1749856680}
   m_Layer: 0
@@ -329,25 +328,6 @@ MonoBehaviour:
   forceMultiplier: 35
   mainBone: {fileID: 8511463109517188046}
   pulseSpeed: 0.7
---- !u!114 &8511463109967755978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2169838818638572983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 367efc804fe24f04f941401b71f206c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainBoneRigidBody: {fileID: 8511463109517188046}
-  jump: 32
-  forward: 119
-  backward: 115
-  left: 97
-  right: 100
-  movementSpeed: 10
 --- !u!114 &8511463109967755980
 MonoBehaviour:
   m_ObjectHideFlags: 0
