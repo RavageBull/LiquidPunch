@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class SceneTransition : MonoBehaviour
 
     private int levelToLoad;
 
-    public bool notEntry = false;
+    private bool notEntry = false;
 
-    public AudioSource AweTrack;
+    public PlayableDirector aweTimeline;
+    public PlayableDirector stormTimeline;
 
     private void Awake()
     {
@@ -49,11 +51,16 @@ public class SceneTransition : MonoBehaviour
         notEntry = true;
     }
 
-    public void PlayAweTrack()
+    public void PlayAweTimeline()
     {
         if(notEntry != false)
         {
-            AweTrack.Play();
+            aweTimeline.Play();
+        }
+
+        else
+        {
+            stormTimeline.Play();
         }
     }
 }
