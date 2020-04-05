@@ -4,9 +4,11 @@ using UnityEngine;
 
 public interface IHandInteractable
 {
-
+    bool TargetedByOther(HandInteractionScript h);
     void OnHandInteractionGainFocus(HandInteractionScript h);
     void OnHandInteractionLoseFocus(HandInteractionScript h);
-    void OnHandInteractTriggerPull(HandInteractionScript h);
+    void OnHandInteractTriggerDown(HandInteractionScript h);
+    void OnHandInteractTrigger(HandInteractionScript h);
+    void OnHandInteractTriggerUp(HandInteractionScript h);
 
 }

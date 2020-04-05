@@ -9,11 +9,14 @@ public class HandInteractionScript : MonoBehaviour
     public float radius,distance;
 
     public LayerMask interactables;
+    public OVRInput.Button interactButton;
+    public OVRInput.Controller controller;
 
     
 
     public IHandInteractable closestInteractable;
     public GameObject target;
+    public Ray targetRay;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +29,41 @@ public class HandInteractionScript : MonoBehaviour
     {
         IHandInteractable temp = closestInteractable;
         
-        closestInteractable = GetclosesthandInteractablesInRange();
+        targetRay = new Ray(transform.position,transform.forward);
+        if (!OVRInput.Get(interactButton,controller))
+        {
+            closestInteractable = GetclosesthandInteractablesInRange(targetRay);
+        }
+
         if (temp != closestInteractable)
         {
             temp.OnHandInteractionLoseFocus(this);
             closestInteractable.OnHandInteractionGainFocus(this);
             target = (closestInteractable as MonoBehaviour).gameObject;
         }
+        
+        if(OVRInput.GetDown(interactButton,controller))
+        {
+            if (target != null)
+            {
+                closestInteractable.OnHandInteractTriggerDown(this);
+            }
+        }
+        if(OVRInput.GetUp(interactButton,controller))
+        {
+            if (target != null)
+            {
+                closestInteractable.OnHandInteractTriggerUp(this);
+            }
+        } 
+        if(OVRInput.Get(interactButton,controller))
+        {
+            if (target != null)
+            {
+                closestInteractable.OnHandInteractTrigger(this);
+            }
+        }
+        
     }
     float DistanceFromRay(Ray ray, Vector3 point)
     {
@@ -41,12 +72,13 @@ public class HandInteractionScript : MonoBehaviour
 
     RaycastHit ClosestToRay(RaycastHit[] raycastHits,Ray ray)
     {
-        RaycastHit closestHit = raycastHits[0];
-        float distancefromRay = DistanceFromRay(ray,closestHit.point);
-            
+        RaycastHit closestHit = new RaycastHit();
+        float distancefromRay = Mathf.Infinity;
+          
+        
         foreach (RaycastHit hit in raycastHits)
         {
-            if (DistanceFromRay(ray,hit.point) < distancefromRay)
+            if (DistanceFromRay(ray,hit.point) < distancefromRay && !hit.collider.GetComponent<IHandInteractable>().TargetedByOther(this) )
             {
                 closestHit = hit;
                 distancefromRay = DistanceFromRay(ray, closestHit.point);
@@ -74,13 +106,10 @@ public class HandInteractionScript : MonoBehaviour
     
     
 
-IHandInteractable GetclosesthandInteractablesInRange()
+IHandInteractable GetclosesthandInteractablesInRange( Ray r)
      {
-         Ray ray = new Ray(transform.position,transform.forward);
-         RaycastHit[] handInteractables =  Physics.SphereCastAll(ray, radius, distance, interactables, QueryTriggerInteraction.Collide);
-
-         //return ClosestToPoint(handInteractables, transform.position).collider.GetComponent<IHandInteractable>();
-         return ClosestToRay(handInteractables, ray).collider.GetComponent<IHandInteractable>();
+         RaycastHit[] handInteractables =  Physics.SphereCastAll(r, radius, distance, interactables, QueryTriggerInteraction.Collide);
+         return ClosestToRay(handInteractables, r).collider.GetComponent<IHandInteractable>();
      }
 
     private void OnDrawGizmos()

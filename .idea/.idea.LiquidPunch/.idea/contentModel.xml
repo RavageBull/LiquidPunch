@@ -761,12 +761,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="emmisivePulse.cs" t="Include" />
           <e p="JellYfish" t="Include">
             <e p="JellyFishBoundary.cs" t="Include" />
             <e p="JellyFishWandering.cs" t="Include" />
             <e p="jellyInteraction.cs" t="Include" />
             <e p="MovementTest.cs" t="Include" />
-            <e p="MoveTowardTarget.cs" t="Include" />
             <e p="PulsingMovement.cs" t="Include" />
           </e>
           <e p="player interaction" t="Include">
