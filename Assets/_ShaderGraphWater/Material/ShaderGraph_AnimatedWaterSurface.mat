@@ -84,7 +84,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WaveHeight: 2
+    - _WaveHeight: 1
     - _ZWrite: 1
     m_Colors:
     - Color_B55815D6: {r: 0.15, g: 0.21767679, b: 0.25, a: 0}
