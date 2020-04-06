@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 367066202254516424}
   - component: {fileID: 8665790428364249854}
   - component: {fileID: 3134394360715175431}
+  - component: {fileID: 3199077639220180228}
   m_Layer: 0
   m_Name: Smaller_Rock_LQ
   m_TagString: Untagged
@@ -78,3 +79,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3199077639220180228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3693880905483965147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10e8640759869947950cf07d330c116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  colors:
+  - {r: 0, g: 0.22685902, b: 0.26415092, a: 0}
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  pulseSpeed: 0.3
+  randomness: 0
+  syncronised: 0
