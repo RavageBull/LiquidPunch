@@ -1015,6 +1015,13 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 88.98333
+    functionName: AudioFadeOut
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 5
+    intParameter: 0
+    messageOptions: 0
   - time: 89.46667
     functionName: TransitionScenes
     data: 
