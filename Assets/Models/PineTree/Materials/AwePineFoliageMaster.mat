@@ -39,11 +39,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_803ABA94:
-        m_Texture: {fileID: 2800000, guid: d51671bd42976f9479d67b2044e18559, type: 3}
+        m_Texture: {fileID: 2800000, guid: 37df13777739fc848bbd8240b89533c8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_B62FCB85:
-        m_Texture: {fileID: 2800000, guid: 1a61a5cce405eeb42ae71f4319adc296, type: 3}
+        m_Texture: {fileID: 2800000, guid: d5bbc6c38ed7c6b45b1ea477933eba9a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -75,7 +75,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_MainTex:
-        m_Texture: {fileID: 2800000, guid: 1cff6cff6e3fefd42ac2359798d14a26, type: 3}
+        m_Texture: {fileID: 2800000, guid: ffde3a6379a7b8b4293ee4d7915168c8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
