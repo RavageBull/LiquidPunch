@@ -13,6 +13,7 @@ public class SceneTransition : MonoBehaviour
     private int levelToLoad;
 
     private bool notEntry = false;
+    public bool endScene = false;
 
     public PlayableDirector aweTimeline;
     public PlayableDirector stormTimeline;
@@ -38,17 +39,26 @@ public class SceneTransition : MonoBehaviour
     }
 
     public void FadeToLevel (int levelIndex)
-    {
-        levelToLoad = levelIndex;
+    {       
+        levelToLoad = levelIndex;     
+
         animator.SetBool("FadeOut", true);
     }
 
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene(levelToLoad);
         animator.SetBool("FadeOut", false);
 
         notEntry = true;
+
+        if (levelToLoad >= 2)
+        {
+            EndScene();
+        }
+        else
+        {
+            SceneManager.LoadScene(levelToLoad);
+        }
     }
 
     public void PlayAweTimeline()
@@ -62,5 +72,10 @@ public class SceneTransition : MonoBehaviour
         {
             stormTimeline.Play();
         }
+    }
+
+    public void EndScene()
+    {
+        Application.Quit();
     }
 }
