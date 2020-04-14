@@ -10,7 +10,7 @@ public class SceneTransition : MonoBehaviour
 
     public Animator animator;
 
-    private int levelToLoad;
+    private int levelToLoad = 0;
 
     private bool notEntry = false;
     public bool endScene = false;
@@ -39,8 +39,9 @@ public class SceneTransition : MonoBehaviour
     }
 
     public void FadeToLevel (int levelIndex)
-    {       
-        levelToLoad = levelIndex;     
+    {    
+        levelToLoad = levelIndex;
+        Debug.Log("levelIndex is "+levelIndex);
 
         animator.SetBool("FadeOut", true);
     }
@@ -49,9 +50,9 @@ public class SceneTransition : MonoBehaviour
     {
         animator.SetBool("FadeOut", false);
 
-        notEntry = true;
-
-        if (levelToLoad >= 1)
+        notEntry = true;      
+        
+        if (levelToLoad > 1)
         {
             EndScene();
         }
@@ -59,6 +60,8 @@ public class SceneTransition : MonoBehaviour
         {
             SceneManager.LoadScene(levelToLoad);
         }
+        
+
     }
 
     public void PlayAweTimeline()
