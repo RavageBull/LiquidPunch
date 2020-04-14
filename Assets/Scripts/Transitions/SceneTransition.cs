@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
+//using Liminal.SDK.Core;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -50,12 +51,16 @@ public class SceneTransition : MonoBehaviour
     {
         animator.SetBool("FadeOut", false);
 
-        notEntry = true;      
-        
+        notEntry = true;
+
+        Debug.Log("LevelLoading " + levelToLoad);
+
         if (levelToLoad > 1)
         {
             EndScene();
+            Debug.Log("LevelTOLoad " + levelToLoad);
         }
+
         else
         {
             SceneManager.LoadScene(levelToLoad);
@@ -79,6 +84,7 @@ public class SceneTransition : MonoBehaviour
 
     public void EndScene()
     {
-        Application.Quit();
+        OVRManager.PlatformUIConfirmQuit();
+        //ExperienceApp.End();
     }
 }
