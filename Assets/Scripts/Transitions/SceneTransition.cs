@@ -51,7 +51,7 @@ public class SceneTransition : MonoBehaviour
 
         notEntry = true;
 
-        if (levelToLoad >= 2)
+        if (levelToLoad >= 1)
         {
             EndScene();
         }
