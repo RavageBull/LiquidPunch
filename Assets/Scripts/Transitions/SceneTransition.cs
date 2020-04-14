@@ -85,6 +85,7 @@ public class SceneTransition : MonoBehaviour
     public void EndScene()
     {
         OVRManager.PlatformUIConfirmQuit();
+        Application.Quit();
         //ExperienceApp.End();
     }
 }
