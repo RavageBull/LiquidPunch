@@ -58,7 +58,7 @@ public class SceneTransition : MonoBehaviour
         if (levelToLoad > 1)
         {
             EndScene();
-            Debug.Log("LevelTOLoad " + levelToLoad);
+            Debug.Log("Level is at " + levelToLoad);
         }
 
         else
@@ -86,6 +86,7 @@ public class SceneTransition : MonoBehaviour
     {
         OVRManager.PlatformUIConfirmQuit();
         Application.Quit();
+        Debug.Log("Experience Ended");
         //ExperienceApp.End();
     }
 }
