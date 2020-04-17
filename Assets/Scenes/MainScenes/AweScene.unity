@@ -267,6 +267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DistanceGrabHandLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 1620805885933330, guid: 0242aa8515b4bc947a945a5c6df83ee9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4669234126623968, guid: 0242aa8515b4bc947a945a5c6df83ee9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1472,6 +1476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BGTreePlanes_Awe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945850439748403497, guid: 574dbe5ebd39db8488743525206cf1ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4782496512506689155, guid: 574dbe5ebd39db8488743525206cf1ce,
         type: 3}
@@ -2816,6 +2825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BGTreePlanes_Awe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945850439748403497, guid: 574dbe5ebd39db8488743525206cf1ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4782496512506689155, guid: 574dbe5ebd39db8488743525206cf1ce,
         type: 3}
@@ -5157,6 +5171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BranchBigCombined
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5b750c324ec7562488288dd7cf9216cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5b750c324ec7562488288dd7cf9216cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5225,6 +5244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 742519496701765523, guid: 70fb55aa871e0074f8f62ed2b4575e36,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 742519496701765520, guid: 70fb55aa871e0074f8f62ed2b4575e36,
         type: 3}
@@ -5809,6 +5833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BGTreePlanes_Awe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945850439748403497, guid: 574dbe5ebd39db8488743525206cf1ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4782496512506689155, guid: 574dbe5ebd39db8488743525206cf1ce,
         type: 3}
@@ -7058,6 +7087,10 @@ PrefabInstance:
     - target: {fileID: 1173658494909946, guid: 6fae51a9f4170334e8639e8dbfc0a54b, type: 3}
       propertyPath: m_Name
       value: DistanceGrabHandRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173658494909946, guid: 6fae51a9f4170334e8639e8dbfc0a54b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4580194091363106, guid: 6fae51a9f4170334e8639e8dbfc0a54b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11360,6 +11393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lake of lights
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098339368976411107, guid: 12f6932766b51ba4d8533203e6b2cd1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4098339368976411108, guid: 12f6932766b51ba4d8533203e6b2cd1a,
         type: 3}

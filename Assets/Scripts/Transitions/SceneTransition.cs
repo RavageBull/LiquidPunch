@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,8 @@ public class SceneTransition : MonoBehaviour
 
     public Animator animator;
 
+    public static event Action JellyFishleaveEvent;
+    public static event Action<float> RockFadeEvent;
     private int levelToLoad = 0;
 
     private bool notEntry = false;
@@ -88,5 +91,27 @@ public class SceneTransition : MonoBehaviour
         Application.Quit();
         Debug.Log("Experience Ended");
         //ExperienceApp.End();
+    }
+
+
+    public void MakeJelliesLeave()
+    {
+        OnJellyFishleaveEvent();
+    }
+    public void MakeRocksFade(float timeSpan)
+    {
+        OnRockFadeEvent(timeSpan);
+    }
+
+
+
+    public static void OnJellyFishleaveEvent()
+    {
+        JellyFishleaveEvent?.Invoke();
+    }
+
+    public static void OnRockFadeEvent(float timeSpan)
+    {
+        RockFadeEvent?.Invoke(timeSpan);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Jellyfish
@@ -10,6 +11,7 @@ namespace Jellyfish
         public float maxDistance;
         public float minHeight;
         public float turnForce;
+        public bool goinDown = false;
 
         public enum JellyFishStates
         {
@@ -21,10 +23,23 @@ namespace Jellyfish
         // Start is called before the first frame update
 
         // Update is called once per frame
+        private void Awake()
+        {
+            SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
+
+            SceneTransition.JellyFishleaveEvent += GoDownNow;
+        }
+
+        public void GoDownNow()
+        {
+            goinDown = true;
+        }
+
         void FixedUpdate()
         {
             currentStates.Clear();
-        
+            
+            
             if (Vector3.Distance(MainBoneRigidbody.transform.position, PlayerTransform.position) > maxDistance)
             {
                 LookToward(PlayerTransform.position);
@@ -35,11 +50,20 @@ namespace Jellyfish
                 LookAway(PlayerTransform.position);
                 currentStates.Add(JellyFishStates.TooClose);
             }
-        
-            if (MainBoneRigidbody.transform.position.y < minHeight)
+            
+            if (goinDown)
             {
-                currentStates.Add(JellyFishStates.TooLow);
-                LookUp();
+                LookDown();
+            }
+            else
+            {
+                
+
+                if (MainBoneRigidbody.transform.position.y < minHeight)
+                {
+                    currentStates.Add(JellyFishStates.TooLow);
+                    LookUp();
+                }
             }
 
         }

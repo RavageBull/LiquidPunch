@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class HandInteractionScript : MonoBehaviour
 {
@@ -13,33 +14,66 @@ public class HandInteractionScript : MonoBehaviour
     public OVRInput.Controller controller;
 
     
-
+    IHandInteractable temp;
     public IHandInteractable closestInteractable;
     public GameObject target;
     public Ray targetRay;
+    private AudioSource jellyBloop;
 
     // Start is called before the first frame update
     void Start()
     {
+        jellyBloop = GetComponent<AudioSource>();
 
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        IHandInteractable temp = closestInteractable;
+        
         
         targetRay = new Ray(transform.position,transform.forward);
         if (!OVRInput.Get(interactButton,controller))
         {
-            closestInteractable = GetclosesthandInteractablesInRange(targetRay);
+            
+           // closestInteractable = GetclosesthandInteractablesInRange(targetRay);
+           
+           RaycastHit hit;
+           bool colided = Physics.SphereCast(targetRay, radius, out hit, distance, interactables, QueryTriggerInteraction.Collide);
+
+         
+           if (colided && hit.collider.gameObject.GetComponent<IHandInteractable>() != null)
+           {
+               IHandInteractable tempIhand = hit.collider.gameObject.GetComponent<IHandInteractable>();
+
+               if (!tempIhand.TargetedByOther(this))
+               {
+                   closestInteractable = hit.collider.gameObject.GetComponent<IHandInteractable>();
+               }
+               else
+               {
+                   closestInteractable = null;
+               }
+           }
+           else
+           {
+               closestInteractable = null;
+           }
         }
 
         if (temp != closestInteractable)
         {
-            temp.OnHandInteractionLoseFocus(this);
-            closestInteractable.OnHandInteractionGainFocus(this);
-            target = (closestInteractable as MonoBehaviour).gameObject;
+            if (temp != null)
+            {
+              temp.OnHandInteractionLoseFocus(this);  
+            }
+
+            if (closestInteractable != null)
+            {
+                closestInteractable.OnHandInteractionGainFocus(this);
+                target = (closestInteractable as MonoBehaviour).gameObject;
+            }
+            temp = closestInteractable;
         }
         
         if(OVRInput.GetDown(interactButton,controller))
@@ -47,6 +81,12 @@ public class HandInteractionScript : MonoBehaviour
             if (target != null)
             {
                 closestInteractable.OnHandInteractTriggerDown(this);
+                if (!jellyBloop.isPlaying)
+                {
+                    jellyBloop.pitch = Random.Range(0.8f, 1.3f);
+                    jellyBloop.Play();
+                }
+
             }
         }
         if(OVRInput.GetUp(interactButton,controller))
@@ -64,53 +104,9 @@ public class HandInteractionScript : MonoBehaviour
             }
         }
         
-    }
-    float DistanceFromRay(Ray ray, Vector3 point)
-    {
-        return Vector3.Cross(ray.direction, point - ray.origin).magnitude;
-    }
-
-    RaycastHit ClosestToRay(RaycastHit[] raycastHits,Ray ray)
-    {
-        RaycastHit closestHit = new RaycastHit();
-        float distancefromRay = Mathf.Infinity;
-          
         
-        foreach (RaycastHit hit in raycastHits)
-        {
-            if (DistanceFromRay(ray,hit.point) < distancefromRay && !hit.collider.GetComponent<IHandInteractable>().TargetedByOther(this) )
-            {
-                closestHit = hit;
-                distancefromRay = DistanceFromRay(ray, closestHit.point);
-            }
-        }
-
-        return closestHit;
     }
-    RaycastHit ClosestToPoint(RaycastHit[] raycastHits,Vector3 point)
-    {
-        RaycastHit closestHit = raycastHits[0];
-        float distancefromPoint = Vector3.Distance(closestHit.point,point);
-            
-        foreach (RaycastHit hit in raycastHits)
-        {
-            if ( Vector3.Distance(hit.point,point)  < distancefromPoint)
-            {
-                closestHit = hit;
-                distancefromPoint = Vector3.Distance(closestHit.point,point);
-            }
-        }
 
-        return closestHit;
-    }
-    
-    
-
-IHandInteractable GetclosesthandInteractablesInRange( Ray r)
-     {
-         RaycastHit[] handInteractables =  Physics.SphereCastAll(r, radius, distance, interactables, QueryTriggerInteraction.Collide);
-         return ClosestToRay(handInteractables, r).collider.GetComponent<IHandInteractable>();
-     }
 
     private void OnDrawGizmos()
     {

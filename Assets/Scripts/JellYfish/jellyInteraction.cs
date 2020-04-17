@@ -21,9 +21,26 @@ namespace Jellyfish
         private HandInteractionScript Targeter;
         public float timer;
 
+        public bool ableToBeControlled = true;
+
         private void Start()
         {
             startPulseForce = pulsingMovement.forceMultiplier;
+        }
+        private void Awake()
+        {
+            SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
+
+            SceneTransition.JellyFishleaveEvent += StopBeingControlled;
+        }
+
+        public void StopBeingControlled()
+        {
+            ableToBeControlled = false;
+            Targeter = null;
+            targeted = false;
+            
+            tempIndicatorSphere.SetActive(false);
         }
 
         // Update is called once per frame
@@ -53,12 +70,15 @@ namespace Jellyfish
 
         public void OnHandInteractionGainFocus(HandInteractionScript h)
         {
-            pulsingMovement.forceMultiplier = startPulseForce / 5f;
-            Targeter = h;         
-            targeted = true;
-            
-            tempIndicatorSphere.SetActive(true);
-            
+            if (ableToBeControlled)
+            {
+                pulsingMovement.forceMultiplier = startPulseForce / 5f;
+                Targeter = h;
+                targeted = true;
+
+                tempIndicatorSphere.SetActive(true);
+            }
+
 
         }
 
@@ -73,24 +93,31 @@ namespace Jellyfish
 
         public void OnHandInteractTriggerDown(HandInteractionScript h)
         {
-
-            distanceFromHand = 2 + Vector3.Distance(transform.position, h.transform.position);
-
+            if (ableToBeControlled)
+            {
+                distanceFromHand = 2 + Vector3.Distance(transform.position, h.transform.position);
+            }
         }
 
         public void OnHandInteractTrigger(HandInteractionScript h)
         {
-            Vector3 t = h.targetRay.GetPoint(distanceFromHand);
-            pulsingMovement.enabled = true;
-            pulsingMovement.forceMultiplier = 10 + pusleForceModifier.Evaluate(Vector3.Distance(transform.position, t)/distanceFromHand)  ;
-            jellyFishBoundary.LookToward(t);
-            timer = 2f;
+            if (ableToBeControlled)
+            {
+                Vector3 t = h.targetRay.GetPoint(distanceFromHand);
+                pulsingMovement.enabled = true;
+                pulsingMovement.forceMultiplier =
+                    10 + pusleForceModifier.Evaluate(Vector3.Distance(transform.position, t) / distanceFromHand);
+                jellyFishBoundary.LookToward(t);
+                timer = 2f;
+            }
         }
 
         public void OnHandInteractTriggerUp(HandInteractionScript h)
         {
-            pulsingMovement.enabled = false;
-            
+            if (ableToBeControlled)
+            {
+                pulsingMovement.enabled = false;
+            }
         }
 
         private void OnDrawGizmos()

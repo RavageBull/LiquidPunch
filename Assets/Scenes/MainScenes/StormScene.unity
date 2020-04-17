@@ -763,7 +763,6 @@ GameObject:
   - component: {fileID: 114975277}
   - component: {fileID: 114975274}
   - component: {fileID: 114975272}
-  - component: {fileID: 114975278}
   - component: {fileID: 114975275}
   - component: {fileID: 114975276}
   m_Layer: 0
@@ -1020,73 +1019,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   tornadoEffecteds: []
---- !u!114 &114975278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114975270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0b7667e5e3d7a4c87cb2bc59057a03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeOutCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: -81
-      outSlope: -81
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: -80
-      inSlope: -81
-      outSlope: -81
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  fadeInCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: -80
-      inSlope: 81
-      outSlope: 81
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 81
-      outSlope: 81
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  audioMixer: {fileID: 24100000, guid: 1dd706bb85d8aef4e83a6229dbd62c36, type: 2}
-  duration: 5
-  timer: 0
-  VolumeExposedName: MasterVolume
-  minVolume: 0
-  fading: 0
-  fadeDirection: 0
 --- !u!1 &124986591
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,7 +6881,7 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 1dd706bb85d8aef4e83a6229dbd62c36, type: 2}
   duration: 5
   timer: 0
-  VolumeExposedName: MasterVolume
+  VolumeExposedName: EnvironmentVolume
   minVolume: 0
   fading: 0
   fadeDirection: 1
