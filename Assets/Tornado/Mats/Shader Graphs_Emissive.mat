@@ -44,12 +44,13 @@ Material:
     - Vector1_215C3518: 20
     - Vector1_4849E038: 30
     - Vector1_86F8D318: 0
-    - Vector1_A4C470E6: 0.413
+    - Vector1_A4C470E6: 0.3
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DissolveEmissive: 0.400032
     - _DstBlend: 0
     - _GlossinessSource: 0
     - _QueueOffset: 0

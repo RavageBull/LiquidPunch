@@ -23,6 +23,7 @@ Material:
     m_Floats:
     - Vector1_4849E038: 65
     - Vector1_A4C470E6: 0.3
+    - _DissolveEmissive: 0.30000496
     m_Colors:
     - Color_933107EA: {r: 1, g: 0, b: 0.71328974, a: 0}
     - Vector2_58546B8: {r: -0.09, g: 0.3, b: 0, a: 0}
