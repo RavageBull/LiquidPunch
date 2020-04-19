@@ -23,7 +23,7 @@ Material:
     m_Floats:
     - Vector1_215C3518: 20
     - Vector1_86F8D318: 0.72
-    - _Dissolve: 0.72067904
+    - _Dissolve: 0.72049177
     m_Colors:
     - Color_8DDF3BB5: {r: 1, g: 1, b: 1, a: 0}
     - Vector2_C3FA47D6: {r: 0, g: 0, b: 0, a: 0}

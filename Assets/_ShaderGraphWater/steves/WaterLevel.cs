@@ -8,7 +8,7 @@ public class WaterLevel : MonoBehaviour
     public Material water;
     private float timer;
     public float risetime;
-    public float multipler;
+    public float divider;
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class WaterLevel : MonoBehaviour
 
         if (timer < risetime)
         {
-            water.SetFloat("_WaveHeight",timer/multipler);
+            water.SetFloat("_WaveHeight",timer/divider);
             
         }
         
