@@ -25,9 +25,9 @@ public class TornadoFadeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        blue = true;
-        lightGrey = true;
-        darkGrey = true;
+        blue = false;
+        lightGrey = false;
+        darkGrey = false;
 
         blueTop.SetFloat("_DissolveEmissive", 0);
         blueMid.SetFloat("_DissolveEmissive", 0);
