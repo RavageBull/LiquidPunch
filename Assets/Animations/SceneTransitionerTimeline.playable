@@ -178,7 +178,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 99.88333
+  - time: 105.433334
     functionName: MakeRocksFade
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -19011,6 +19011,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5708102807495545906, guid: 70fb55aa871e0074f8f62ed2b4575e36,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708102807495545906, guid: 70fb55aa871e0074f8f62ed2b4575e36,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70fb55aa871e0074f8f62ed2b4575e36, type: 3}
 --- !u!1001 &3819022770548593532
@@ -19025,11 +19035,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneTransitioner
       objectReference: {fileID: 0}
-    - target: {fileID: 3819022770059814569, guid: 937f775ce8a9fa745bb5241ab7a7e168,
-        type: 3}
-      propertyPath: stormTimeline
-      value: 
-      objectReference: {fileID: 114975272}
     - target: {fileID: 3819022770059814571, guid: 937f775ce8a9fa745bb5241ab7a7e168,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19085,6 +19090,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3819022770059814569, guid: 937f775ce8a9fa745bb5241ab7a7e168,
+        type: 3}
+      propertyPath: stormTimeline
+      value: 
+      objectReference: {fileID: 114975272}
     - target: {fileID: 3819022770059814564, guid: 937f775ce8a9fa745bb5241ab7a7e168,
         type: 3}
       propertyPath: Priority
