@@ -50,7 +50,7 @@ Material:
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DissolveEmissive: 0.4002052
+    - _DissolveEmissive: 0.40004846
     - _DstBlend: 0
     - _GlossinessSource: 0
     - _QueueOffset: 0

@@ -1113,7 +1113,7 @@ MonoBehaviour:
   midLightGrey: {fileID: 2100000, guid: 78b953b56e9ca044daa010da480d8e79, type: 2}
   midDarkGrey: {fileID: 2100000, guid: d5bb5cc2ee11ef14b9bcfb36566f098c, type: 2}
   blueMid: {fileID: 2100000, guid: 18d3156b03e73c0438a30a356f93c07a, type: 2}
-  bluespeed: 0.01
+  bluespeed: 0.015
   darkGreySpeed: 0.015
   lightGreySpeed: 0.015
 --- !u!1 &124986591
