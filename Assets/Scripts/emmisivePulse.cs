@@ -34,13 +34,24 @@ public class emmisivePulse : MonoBehaviour
     float xOffset = 0;
 
     float yOffset = 0;
-
+    private string colorName;
     // Start is called before the first frame update
     void Start()
     {
+        
+        
+        
         pulsedrenderer = GetComponent<Renderer>();
         pulsedmaterial = pulsedrenderer.material;
-        startColor = pulsedmaterial.GetColor("Color_6F9AC641");
+        if (pulsedmaterial.shader.name == "Shader Graphs/EmissiveRock")
+        {
+            colorName = "Color_6F9AC641";
+        }
+        else if (pulsedmaterial.shader.name == "Shader Graphs/MushroomShader")
+        {
+            colorName = "Color_ECD9926D";
+        }
+        startColor = pulsedmaterial.GetColor(colorName);
         randOffset = Random.Range(0f, 1f);
         seed = Random.Range(0f, 1f);
         if (randomness)
@@ -51,9 +62,18 @@ public class emmisivePulse : MonoBehaviour
 
     private void Awake()
     {
+        pulsedrenderer = GetComponent<Renderer>();
+        pulsedmaterial = pulsedrenderer.material;
         SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
 
-        SceneTransition.RockFadeEvent += FadeOut;
+        if (pulsedmaterial.shader.name == "Shader Graphs/EmissiveRock")
+        {
+            SceneTransition.RockFadeEvent += FadeOut;
+        }
+        else if (pulsedmaterial.shader.name == "Shader Graphs/MushroomShader")
+        {
+            SceneTransition.MushroomFadeEvent += FadeOut;
+        }
     }
 
     // Update is called once per frame
@@ -108,8 +128,8 @@ public class emmisivePulse : MonoBehaviour
 
         currentColor = Color.Lerp(startColor, color, SineWave(Time.time + xOffset, pulseSpeed));
 
-        pulsedmaterial.SetColor("Color_6F9AC641", currentColor);
-        pulsedrenderer.material.SetColor("Color_6F9AC641", currentColor);
+        pulsedmaterial.SetColor(colorName, currentColor);
+        pulsedrenderer.material.SetColor(colorName, currentColor);
     }
 
     float SineWave(float x, float pulseSpeed)
