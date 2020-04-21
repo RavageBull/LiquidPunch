@@ -769,11 +769,11 @@
             <e p="MovementTest.cs" t="Include" />
             <e p="PulsingMovement.cs" t="Include" />
           </e>
-          <e p="MushroomEmmissiveFade.cs" t="Include" />
           <e p="player interaction" t="Include">
             <e p="HandInteractionScript.cs" t="Include" />
             <e p="IHandInteractable.cs" t="Include" />
           </e>
+          <e p="SkyboxFade.cs" t="Include" />
           <e p="Tornado" t="Include">
             <e p="TestMoverScript.cs" t="Include" />
             <e p="TornadoEffected.cs" t="Include" />

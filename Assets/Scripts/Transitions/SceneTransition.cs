@@ -15,6 +15,8 @@ public class SceneTransition : MonoBehaviour
     public static event Action JellyFishleaveEvent;
     public static event Action<float> RockFadeEvent;
     public static event Action<float> MushroomFadeEvent;
+    public static event Action<float> SkyFadeEvent;
+    
 
     private int levelToLoad = 0;
 
@@ -109,6 +111,10 @@ public class SceneTransition : MonoBehaviour
     {
         OnMushroomFadeEvent(timeSpan);
     }
+    public void MakeSkyFade(float timeSpan)
+    {
+        OnSkyFadeEvent(timeSpan);
+    }
 
 
 
@@ -125,5 +131,10 @@ public class SceneTransition : MonoBehaviour
     private static void OnMushroomFadeEvent(float obj)
     {
         MushroomFadeEvent?.Invoke(obj);
+    }
+
+    private static void OnSkyFadeEvent(float obj)
+    {
+        SkyFadeEvent?.Invoke(obj);
     }
 }

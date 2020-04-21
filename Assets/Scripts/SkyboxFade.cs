@@ -1,23 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MushroomEmmissiveFade : MonoBehaviour
+public class SkyboxFade : MonoBehaviour
 {
     public float timer = 0;
 
     public float fadeTime;
     private Color startColor;
     public bool fading = false;
-
     private Color currentColor;
 
-    public Renderer emissiveRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        emissiveRenderer = GetComponent<Renderer>();
-        startColor = emissiveRenderer.material.GetColor("Color_ECD9926D");
+        
+        startColor = RenderSettings.skybox.GetColor("_Tint");
+
+        //startColor = skybox.material.GetColor("_Tint");
     }
 
     // Update is called once per frame
@@ -27,10 +28,10 @@ public class MushroomEmmissiveFade : MonoBehaviour
         {
             if (timer <= fadeTime)
             {
-                currentColor = Color.Lerp(startColor, Color.black, timer / fadeTime);
+                currentColor = Color.Lerp(startColor, new Color(0.1f,0.1f,0.1f), timer / fadeTime);
                 timer += Time.deltaTime;
             }
-            emissiveRenderer.material.SetColor("Color_ECD9926D", currentColor);
+            RenderSettings.skybox.SetColor("_Tint", currentColor);
         }
 
     }
@@ -38,8 +39,13 @@ public class MushroomEmmissiveFade : MonoBehaviour
     {
         SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
 
-        SceneTransition.MushroomFadeEvent += FadeOut;
+        SceneTransition.SkyFadeEvent += FadeOut;
     }
+
+    private void OnDestroy()
+    {
+        RenderSettings.skybox.SetColor("_Tint", startColor);    }
+
     public void FadeOut(float timeSpan)
     {
         fading = true;
