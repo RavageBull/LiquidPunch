@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MushroomEmmissiveFade : MonoBehaviour
 {
-
     public float timer = 0;
 
     public float fadeTime;
@@ -33,7 +32,6 @@ public class MushroomEmmissiveFade : MonoBehaviour
             }
             emissiveRenderer.material.SetColor("Color_ECD9926D", currentColor);
         }
-        
 
     }
     private void Awake()
