@@ -1565,6 +1565,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4e279fa37683c45449e45c4909b6346d, type: 3}
+    - target: {fileID: 742519495692931921, guid: 70fb55aa871e0074f8f62ed2b4575e36,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1426650699, guid: 70fb55aa871e0074f8f62ed2b4575e36, type: 3}
       propertyPath: water
       value: 
@@ -7579,13 +7584,13 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 67e5b4e8f6d45eb4b853225ff585a299, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
-  m_Pitch: 1
+  m_Volume: 0.5
+  m_Pitch: 0.75
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 80
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
