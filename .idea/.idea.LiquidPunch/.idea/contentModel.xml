@@ -769,6 +769,7 @@
             <e p="MovementTest.cs" t="Include" />
             <e p="PulsingMovement.cs" t="Include" />
           </e>
+          <e p="MushroomEmmissiveFade.cs" t="Include" />
           <e p="player interaction" t="Include">
             <e p="HandInteractionScript.cs" t="Include" />
             <e p="IHandInteractable.cs" t="Include" />
@@ -783,6 +784,7 @@
             <e p="TriggerTransition.cs" t="Include" />
           </e>
         </e>
+        <e p="TornadoFadeScript.cs" t="Include" />
       </e>
       <e p="LiquidPunch.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

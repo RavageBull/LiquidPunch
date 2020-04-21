@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2721738738362629652}
   - component: {fileID: 408561723815914360}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Jelly particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4996,6 +4996,7 @@ MonoBehaviour:
   maxDistance: 21.9
   minHeight: 1.19
   turnForce: 0.05
+  goinDown: 0
   currentStates: 
   MainBoneRigidbody: {fileID: 5633478888577965406}
 --- !u!114 &4632241779640981469
@@ -5149,6 +5150,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   timer: 0
+  ableToBeControlled: 1
 --- !u!1 &5828498895521927816
 GameObject:
   m_ObjectHideFlags: 0
@@ -5311,7 +5313,7 @@ GameObject:
   - component: {fileID: 3219422910816244269}
   - component: {fileID: 6967554522239728241}
   m_Layer: 0
-  m_Name: Particle System (2)
+  m_Name: JellySelected Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
